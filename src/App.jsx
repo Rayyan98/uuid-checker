@@ -85,6 +85,7 @@ function App() {
               onChange={handleInputChange}
               placeholder="Enter UUID here..."
               size="lg"
+              textAlign="center"
             />
             
             <Button
