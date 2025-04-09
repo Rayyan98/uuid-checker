@@ -108,7 +108,7 @@ function App() {
                 w="100%"
                 textAlign="center"
               >
-                UUID {uuid} is not used with 99.99% confidence
+                UUID {uuid} is not used (99.99% Confidence)
               </Text>
             )}
           </VStack>
@@ -116,6 +116,26 @@ function App() {
         
         <Text color="gray.600" fontSize="sm">
           Enter a valid UUID to check if it's already in use
+        </Text>
+
+        <Text color="gray.500" fontSize="xs" textAlign="center">
+          (Confidence is valid until 326,915,000,000,000,000 uuids have been globally generated.{' '}
+          <a 
+            href="https://en.wikipedia.org/wiki/Birthday_problem" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            style={{ color: 'blue', textDecoration: 'underline' }}
+          >
+            Theory
+          </a>{' '}
+          <a 
+            href="https://www.wolframalpha.com/input?i=n+%3D+sqrt%28%282*d%29+*+ln%28%281%29%2F%281-p%29%29%29%2C+d%3D2%5E122%2Cp%3D0.01" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            style={{ color: 'blue', textDecoration: 'underline' }}
+          >
+            Working
+          </a>)
         </Text>
       </VStack>
     </Container>
